@@ -30,7 +30,7 @@ const makeLI = (data) => {
     document.getElementById('lista-resultados').appendChild(li);
 };
 
-const criaLink = () => {
+const getLink = () => {
     return "https://api.mapbox.com/geocoding/v5/mapbox.places/" + document.getElementById('search').value + ".json?access_token=pk.eyJ1IjoiY2ZsYmVkdWNhdG9yIiwiYSI6ImNrMTZrYm1vNTA1dWEzaGxqN2tmMTZlazcifQ.XXsWkpgiguegb-C7WQpGBA"
 }
 
@@ -38,7 +38,7 @@ var resposta;
 const consulta = () => {
     
     var consulta = new XMLHttpRequest();
-    var url = criaLink();
+    var url = getLink();
     consulta.open('GET', url, true);
 
     consulta.onreadystatechange = function(e) {
