@@ -6,10 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+<nav class='white'>
+    <div class="nav-wrapper">
+        <a href="#!" class="grey-text brand-logo">Busca aii!!</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text"><i class="material-icons">menu</i></a>
+        <!--<ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+        </ul>-->
+    </div>
+</nav>
+            
+    <ul class="sidenav" id="mobile-demo">
+    <li><a href="/">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <!--<li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>-->
+    </ul>
+                          
+
+
+    <div class='container'>
+        <h4 class="grey-text">O que você procura?</h4>
+    </div>
     <div class='container'>
         <input id='search' type='text' class='search' />
         <input type='submit' value='search' />
@@ -17,9 +42,20 @@
 
     <div id="main"></div>
 
+    <div id="mapa">
+        
+    </div>
+
     <script src='index.js'></script>
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-       
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, edge);
+        });
+    </script>
+
 </body>
 </html>
