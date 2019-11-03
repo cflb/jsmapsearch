@@ -37,11 +37,11 @@ const getLink = () => {
 var resposta;
 const getQuery = () => {
     
-    var consulta = new XMLHttpRequest();
+    var xmlhttpquery = new XMLHttpRequest();
     var url = getLink();
-    consulta.open('GET', url, true);
+    xmlhttpquery.open('GET', url, true);
 
-    consulta.onreadystatechange = function(e) {
+    xmlhttpquery.onreadystatechange = function(e) {
         if (this.readyState){
             if (this.readyState == 0){
                 console.log('aguardando conexao...');
@@ -65,7 +65,7 @@ const getQuery = () => {
             });
         }*/
     }
-    consulta.send();
+    xmlhttpquery.send();
 }
 
 
