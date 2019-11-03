@@ -35,7 +35,7 @@ const getLink = () => {
 }
 
 var resposta;
-const consulta = () => {
+const getQuery = () => {
     
     var consulta = new XMLHttpRequest();
     var url = getLink();
