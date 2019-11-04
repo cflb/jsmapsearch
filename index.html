@@ -7,7 +7,11 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+    <title>My Geo Search Engine</title>
 </head>
 <body>
 <nav class='white'>
@@ -37,12 +41,12 @@
     </div>
     <div class='container'>
         <input id='search' type='text' class='search' />
-        <input type='submit' value='search' />
+        <input type='submit' value='search' onclick="getQuery();" />
     </div>
 
-    <div id="main"></div>
+    <div class='container' id="main"></div>
 
-    <div id="mapa">
+    <div class='container col l12' id="mapa">
         
     </div>
 
