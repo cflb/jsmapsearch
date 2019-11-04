@@ -14,7 +14,8 @@ Aplicação prática dos conhecimentos de HTML, CSS, JavaScript vistos em sala, 
 
 ---
 #### IFBAIANO - GUANAMBI/BA 
-##### CURSO TÉCNICO EM INFORMÁTICA PARA INTERNET 1 ANO. 
+##### CURSO TÉCNICO EM INFORMÁTICA PARA INTERNET 1 ANO.
+##### Prof. Cleyton Fábio 
 ---
 [![npm version](https://img.shields.io/badge/HTML-Forte-black)](https://img.shields.io/badge/HTML-Forte-black)
 [![npm version](https://img.shields.io/badge/CSS3-Bonito-black)](https://img.shields.io/badge/CSS3-Bonito-black)
