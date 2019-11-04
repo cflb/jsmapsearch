@@ -1,5 +1,4 @@
 # JS Busca Mapa
--------------
 
 ## Projeto da disciplina de WebDesing
 Construir uma interface JavaScript de consulta georeferenciada na API do Mapbox e plotar as respostas em um mapa.
